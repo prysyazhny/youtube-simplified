@@ -82,7 +82,7 @@ const HamburgerMenu: React.FC = () => {
           <ul>
             <li
               onClick={() => {
-                window.open("https://github.com/prysyazhny", "_blank");
+                window.open("https://github.com/prysyazhny/youtube-simplified", "_blank");
                 setOpen(false);
               }}
             >

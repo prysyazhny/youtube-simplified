@@ -1,0 +1,170 @@
+/* Import Roboto from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Basic reset and global font */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Container styling */
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+/* Theme classes */
+.container.theme-gray {
+  background-color: #181818;
+}
+
+.container.theme-black {
+  background-color: #000;
+}
+
+/* Hamburger menu styling */
+.hamburger-menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+.hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.hamburger-dropdown {
+  position: absolute;
+  top: 36px; /* a bit below the hamburger button */
+  left: 0;
+  background-color: #282828;
+  border: 1px solid #333;
+  border-radius: 8px;
+  width: 150px;
+  z-index: 100;
+}
+
+.hamburger-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger-dropdown li {
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hamburger-dropdown li:hover {
+  background-color: #444;
+}
+
+/* Theme toggle button (icon-only) */
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 100;
+}
+
+/* Logo styling */
+.logo-container {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 48px;
+  margin: 0;
+}
+
+/* Search form styling */
+.search-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Wrapper to position the suggestions dropdown */
+.search-wrapper {
+  position: relative;
+}
+
+/* Integrated search container */
+.search-container {
+  display: flex;
+  border: 1px solid #333;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #282828;
+}
+
+/* Search input styling */
+.search-input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #282828;
+  color: #fff;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+/* Search button styling */
+.search-button {
+  background-color: #333;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #444;
+}
+
+/* Suggestions dropdown */
+.suggestions-container {
+  position: absolute;
+  top: calc(100% + 5px); /* 5px separation from the search bar */
+  left: 0;
+  right: 0;
+  background-color: #282828;
+  border: 1px solid #333;
+  border-radius: 12px; /* Rounded corners on all sides */
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.suggestion-item:hover {
+  background-color: #444;
+}
